@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @aprendizado.date %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @aprendizado.content %>
+</p>
+
+<%= link_to 'Edit', edit_aprendizado_path(@aprendizado) %> |
+<%= link_to 'Back', aprendizados_path %>

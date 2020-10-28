@@ -1,0 +1,3 @@
+class Aprendizado < ApplicationRecord
+    
+end

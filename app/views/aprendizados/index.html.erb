@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Aprendizados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aprendizados.each do |aprendizado| %>
+      <tr>
+        <td><%= aprendizado.date %></td>
+        <td><%= aprendizado.content %></td>
+        <td><%= link_to 'Show', aprendizado %></td>
+        <td><%= link_to 'Edit', edit_aprendizado_path(aprendizado) %></td>
+        <td><%= link_to 'Destroy', aprendizado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aprendizado', new_aprendizado_path %>
